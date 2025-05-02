@@ -3,161 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zayan Haroon Moosa | AWS Cloud Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Zayan Haroon Moosa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary-color: #1e293b;
-      --accent-color: #38bdf8;
-      --bg-color: #f8fafc;
-      --text-color: #1f2937;
-    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
+      background: #fff;
+      color: #1e293b;
+      line-height: 1.6;
     }
     header {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 3rem 1rem;
+      padding: 2rem;
       text-align: center;
+      background: #1e293b;
+      color: #fff;
     }
     header h1 {
       margin: 0 0 0.5rem;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     header p {
-      margin: 0.3rem 0;
-      font-size: 1.1rem;
+      margin: 0.2rem 0;
+      font-size: 1rem;
     }
-    nav {
-      background: #0f172a;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      color: var(--accent-color);
-    }
-    .container {
-      max-width: 960px;
+    main {
+      max-width: 800px;
       margin: 2rem auto;
-      padding: 1rem;
-    }
-    section {
-      margin-bottom: 3rem;
+      padding: 0 1rem;
     }
     h2 {
-      border-left: 4px solid var(--accent-color);
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      border-left: 3px solid #38bdf8;
       padding-left: 0.5rem;
-      margin-bottom: 1rem;
-      color: var(--primary-color);
     }
-    ul {
-      padding-left: 1.5rem;
-    }
-    .highlight {
-      background-color: #e0f2fe;
-      padding: 0.5rem;
-      border-left: 4px solid var(--accent-color);
-      margin-bottom: 1rem;
+    ul, p {
+      margin: 0.5rem 0 1.5rem;
     }
     .footer {
       text-align: center;
       padding: 2rem 1rem;
-      background: #e2e8f0;
+      background: #f1f5f9;
       font-size: 0.9rem;
-      color: #555;
+      color: #64748b;
+    }
+    a {
+      color: #0ea5e9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Zayan Haroon Moosa</h1>
-    <p>AWS Cloud Engineer | DevOps | Certified Solutions Architect</p>
-    <p>Email: zayanharoon333@gmail.com | Phone: 929-595-8296</p>
-    <p><a href="https://www.linkedin.com/in/zayanhm" style="color: var(--accent-color); text-decoration: underline;">LinkedIn Profile</a></p>
+    <p>AWS Cloud Engineer | DevOps | Solutions Architect</p>
+    <p>Email: zayanharoon333@gmail.com | <a href="https://www.linkedin.com/in/zayanhm" target="_blank" style="color:#38bdf8">LinkedIn</a></p>
   </header>
 
-  <nav>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#leadership">Leadership</a>
-  </nav>
-
-  <div class="container">
-    <section id="skills">
+  <main>
+    <section>
       <h2>Skills</h2>
-      <div class="highlight">
-        <strong>Cloud:</strong> AWS (EC2, S3, CDK, CloudFormation, Glue, Athena, Lambda, IAM, RDS, ECS, EKS, Cloud 9), Azure<br>
-        <strong>DevOps:</strong> Ansible, Terraform, Docker, Git, AWS CodeCommit, HashiCorp Vault, Maven<br>
-        <strong>Languages:</strong> Python, Java, C, JavaScript, Node.js, TypeScript, HTML, CSS<br>
-        <strong>Tools:</strong> PostgreSQL, MySQL, Teams, Jira, Confluence, Slack, Box<br>
-        <strong>Certifications:</strong> AWS Cloud Practitioner, AWS Solutions Architect-Associate
-      </div>
+      <p><strong>Cloud:</strong> AWS (EC2, S3, Lambda, RDS, ECS, EKS, CloudFormation, CDK), Azure, GCP</p>
+      <p><strong>DevOps:</strong> Terraform, Ansible, Docker, Git, Vault, CodeCommit, Maven</p>
+      <p><strong>Languages:</strong> Python, Java, JavaScript, Node.js, HTML/CSS</p>
+      <p><strong>Databases:</strong> PostgreSQL, MySQL</p>
+      <p><strong>Certifications:</strong> AWS Cloud Practitioner, AWS Solutions Architect-Associate</p>
     </section>
 
-    <section id="experience">
-      <h2>Professional Experience</h2>
-      <h3>University of California Office of the President (UCOP) — AWS Developer</h3>
-      <p><em>Aug 2023 – Present | Oakland, CA</em></p>
+    <section>
+      <h2>Experience</h2>
+      <p><strong>UCOP — AWS Developer</strong> (Aug 2023 – Present)</p>
       <ul>
-        <li>Improved performance of AWS-based Java/Python apps by 30% using CDK, Lambda, and ECS.</li>
-        <li>Accelerated deployments by 20% via CI/CD automation.</li>
-        <li>Reduced post-deployment issues by 40% through rigorous unit testing.</li>
-        <li>Enhanced documentation to improve team efficiency by 35%.</li>
-        <li>Improved data-driven decision making by 15% through analytics.</li>
+        <li>Built Java/Python AWS apps with CDK, Lambda, ECS</li>
+        <li>Enhanced CI/CD pipelines, reducing deployment time by 20%</li>
+        <li>Cut post-deployment bugs by 40% via testing</li>
       </ul>
-
-      <h3>California State University, Northridge — IT Assistant</h3>
-      <p><em>Apr 2022 – May 2023 | Los Angeles, CA</em></p>
+      <p><strong>CSU Northridge — IT Assistant</strong> (Apr 2022 – May 2023)</p>
       <ul>
-        <li>Automated EC2 deployment with Terraform & Ansible, reducing manual effort by 75%.</li>
-        <li>Maintained cloud and Linux support queues with 90% resolution rate.</li>
-        <li>Reviewed and contributed to 50+ Terraform cloud deployments via GitHub.</li>
+        <li>Automated EC2 infra with Terraform and Ansible</li>
+        <li>Resolved cloud/Linux tickets with 90% success rate</li>
       </ul>
-
-      <h3>Tuk Tuk Scooters — Technical Support</h3>
-      <p><em>Jun 2019 – Apr 2023 | Los Angeles, CA</em></p>
+      <p><strong>Tuk Tuk Scooters — Tech Support</strong> (Jun 2019 – Apr 2023)</p>
       <ul>
-        <li>Resolved 80% of 100+ customer queries with high satisfaction.</li>
-        <li>Improved troubleshooting response efficiency by 15%.</li>
-        <li>Trained staff on support protocol and enhanced service analytics.</li>
+        <li>Supported 100+ customers, resolving 80% of issues</li>
+        <li>Improved response time with streamlined steps</li>
       </ul>
     </section>
 
-    <section id="projects">
+    <section>
       <h2>Projects</h2>
       <ul>
-        <li><strong>Ansible Vault Password Migration:</strong> Implemented secure storage with AWS Parameter Store and Bash scripting, saving 40% of team time.</li>
-        <li><strong>OEM Dashboard Migration:</strong> Migrated critical services dashboard from Big Brother to Oracle Enterprise Manager with full documentation.</li>
+        <li><strong>Ansible Vault Migration:</strong> Secured secrets using AWS Parameter Store</li>
+        <li><strong>OEM Dashboard:</strong> Migrated services dashboard from legacy to Oracle OEM</li>
       </ul>
     </section>
 
-    <section id="education">
+    <section>
       <h2>Education</h2>
       <p><strong>California State University, Northridge</strong> — BS in Computer Information Technology</p>
-      <p><em>Honors Program, Dean’s List</em></p>
+      <p>Dean’s List • Honors Program</p>
     </section>
 
-    <section id="leadership">
+    <section>
       <h2>Leadership</h2>
-      <p><strong>Director of Events, CSUN MSA</strong> — Executive Board (Jan 2019 – May 2023)</p>
+      <p><strong>CSUN MSA</strong> — Director of Events (2019–2023)</p>
     </section>
-  </div>
+  </main>
 
   <div class="footer">
-    &copy; 2025 Zayan Haroon Moosa — All rights reserved. | Built with ❤️ using HTML & CSS
+    &copy; 2025 Zayan Haroon Moosa
   </div>
 </body>
 </html>
