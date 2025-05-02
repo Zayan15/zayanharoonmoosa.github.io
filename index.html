@@ -3,48 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zayan Haroon Moosa | AWS Developer Portfolio</title>
+  <title>Zayan Haroon Moosa | AWS Cloud Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary-color: #1e293b;
+      --accent-color: #38bdf8;
+      --bg-color: #f8fafc;
+      --text-color: #1f2937;
+    }
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
     }
     header {
-      background: #1e293b;
+      background-color: var(--primary-color);
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
     header h1 {
-      margin: 0;
+      margin: 0 0 0.5rem;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.3rem 0;
+      font-size: 1.1rem;
+    }
+    nav {
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: var(--accent-color);
     }
     .container {
-      max-width: 1000px;
+      max-width: 960px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 1rem;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
     h2 {
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.5rem;
-      color: #1e293b;
+      border-left: 4px solid var(--accent-color);
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
     }
     ul {
-      padding-left: 1.2rem;
+      padding-left: 1.5rem;
     }
-    .contact, .links {
-      margin-top: 1rem;
+    .highlight {
+      background-color: #e0f2fe;
+      padding: 0.5rem;
+      border-left: 4px solid var(--accent-color);
+      margin-bottom: 1rem;
     }
     .footer {
       text-align: center;
       padding: 2rem 1rem;
       background: #e2e8f0;
+      font-size: 0.9rem;
       color: #555;
     }
   </style>
@@ -52,73 +82,82 @@
 <body>
   <header>
     <h1>Zayan Haroon Moosa</h1>
-    <p>AWS Developer | Cloud Engineer | Certified Solutions Architect</p>
-    <div class="contact">
-      <p>Email: zayanharoon333@gmail.com | Phone: 929-595-8296</p>
-    </div>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/zayanhm" style="color: #38bdf8">LinkedIn Profile</a>
-    </div>
+    <p>AWS Cloud Engineer | DevOps | Certified Solutions Architect</p>
+    <p>Email: zayanharoon333@gmail.com | Phone: 929-595-8296</p>
+    <p><a href="https://www.linkedin.com/in/zayanhm" style="color: var(--accent-color); text-decoration: underline;">LinkedIn Profile</a></p>
   </header>
 
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#leadership">Leadership</a>
+  </nav>
+
   <div class="container">
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
-      <p><strong>Cloud:</strong> AWS (EC2, S3, CDK, CloudFormation, Glue, Athena, Lambda, IAM, RDS, ECS, EKS, Cloud 9), Azure</p>
-      <p><strong>DevOps:</strong> Ansible, Terraform, Docker, Git, CodeCommit, HashiCorp Vault, Maven</p>
-      <p><strong>Languages:</strong> Python, Java, C, JavaScript, CSS, HTML, Node.js, TypeScript</p>
-      <p><strong>Other Tools:</strong> PostgreSQL, MySQL, Teams, Zoom, Jira, ServiceNow, Confluence, Box</p>
-      <p><strong>Certifications:</strong> AWS Cloud Practitioner, AWS Solutions Architect-Associate</p>
+      <div class="highlight">
+        <strong>Cloud:</strong> AWS (EC2, S3, CDK, CloudFormation, Glue, Athena, Lambda, IAM, RDS, ECS, EKS, Cloud 9), Azure<br>
+        <strong>DevOps:</strong> Ansible, Terraform, Docker, Git, AWS CodeCommit, HashiCorp Vault, Maven<br>
+        <strong>Languages:</strong> Python, Java, C, JavaScript, Node.js, TypeScript, HTML, CSS<br>
+        <strong>Tools:</strong> PostgreSQL, MySQL, Teams, Jira, Confluence, Slack, Box<br>
+        <strong>Certifications:</strong> AWS Cloud Practitioner, AWS Solutions Architect-Associate
+      </div>
     </section>
 
-    <section>
-      <h2>Experience</h2>
+    <section id="experience">
+      <h2>Professional Experience</h2>
       <h3>University of California Office of the President (UCOP) — AWS Developer</h3>
-      <p><em>Aug 2023 - Present</em></p>
+      <p><em>Aug 2023 – Present | Oakland, CA</em></p>
       <ul>
-        <li>Engineered AWS-based Java/Python applications using CDK, Lambda, CloudFormation, ECS, and EC2.</li>
-        <li>Improved deployment cycles by 20% through advanced CI/CD integration.</li>
-        <li>Reduced post-deployment issues by 40% through comprehensive unit testing.</li>
+        <li>Improved performance of AWS-based Java/Python apps by 30% using CDK, Lambda, and ECS.</li>
+        <li>Accelerated deployments by 20% via CI/CD automation.</li>
+        <li>Reduced post-deployment issues by 40% through rigorous unit testing.</li>
+        <li>Enhanced documentation to improve team efficiency by 35%.</li>
+        <li>Improved data-driven decision making by 15% through analytics.</li>
       </ul>
 
       <h3>California State University, Northridge — IT Assistant</h3>
-      <p><em>Apr 2022 – May 2023</em></p>
+      <p><em>Apr 2022 – May 2023 | Los Angeles, CA</em></p>
       <ul>
-        <li>Automated EC2 deployments with Terraform and Ansible, saving 75% of manual work.</li>
-        <li>Maintained cloud and Linux support tickets with a 90% resolution rate.</li>
+        <li>Automated EC2 deployment with Terraform & Ansible, reducing manual effort by 75%.</li>
+        <li>Maintained cloud and Linux support queues with 90% resolution rate.</li>
+        <li>Reviewed and contributed to 50+ Terraform cloud deployments via GitHub.</li>
       </ul>
 
       <h3>Tuk Tuk Scooters — Technical Support</h3>
-      <p><em>Jun 2019 – Apr 2023</em></p>
+      <p><em>Jun 2019 – Apr 2023 | Los Angeles, CA</em></p>
       <ul>
-        <li>Resolved 80% of customer issues through efficient support systems.</li>
-        <li>Led internal training initiatives and data-driven service improvements.</li>
+        <li>Resolved 80% of 100+ customer queries with high satisfaction.</li>
+        <li>Improved troubleshooting response efficiency by 15%.</li>
+        <li>Trained staff on support protocol and enhanced service analytics.</li>
       </ul>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Ansible-Vault Password Migration:</strong> Secured password storage using AWS Parameter Store, reducing management time by 40%.</li>
-        <li><strong>Dashboard Migration:</strong> Transitioned critical services dashboard to Oracle Enterprise Manager with full documentation.</li>
+        <li><strong>Ansible Vault Password Migration:</strong> Implemented secure storage with AWS Parameter Store and Bash scripting, saving 40% of team time.</li>
+        <li><strong>OEM Dashboard Migration:</strong> Migrated critical services dashboard from Big Brother to Oracle Enterprise Manager with full documentation.</li>
       </ul>
     </section>
 
-    <section>
+    <section id="education">
       <h2>Education</h2>
       <p><strong>California State University, Northridge</strong> — BS in Computer Information Technology</p>
-      <p><em>Honors Program | Dean’s List</em></p>
+      <p><em>Honors Program, Dean’s List</em></p>
     </section>
 
-    <section>
+    <section id="leadership">
       <h2>Leadership</h2>
-      <p><strong>Director of Events, CSUN MSA</strong> — Exec Board (Jan 2019 – May 2023)</p>
+      <p><strong>Director of Events, CSUN MSA</strong> — Executive Board (Jan 2019 – May 2023)</p>
     </section>
   </div>
 
   <div class="footer">
-    &copy; 2025 Zayan Haroon Moosa — All rights reserved.
+    &copy; 2025 Zayan Haroon Moosa — All rights reserved. | Built with ❤️ using HTML & CSS
   </div>
 </body>
 </html>
-
